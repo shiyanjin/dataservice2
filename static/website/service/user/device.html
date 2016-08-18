@@ -1,0 +1,107 @@
+<div class="row">
+    <div class="subcon-title">设备分析</div>
+    <div class="subcon-title2">用户使用的设备</div>
+</div>
+<div class="row margin-top no-margin">
+    <div class="col-xs-6 col-xs-offset-5 no-padding">
+        <div class="col-md-6">
+            <p class="input-group">
+                <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1"
+                       is-open="popup1.opened" datepicker-options="dateOptions1" ng-required="true"
+                       close-text="Close" alt-input-formats="altInputFormats" readonly/>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p class="input-group">
+                <input type="text" class="form-control" uib-datepicker-popup ng-model="dt2"
+                       is-open="popup2.opened" datepicker-options="dateOptions2" ng-required="true"
+                       close-text="Close" readonly/>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open2()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+            </p>
+        </div>
+    </div>
+    <button type="button" class="btn btn-default pull-right">下载</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>排名</th>
+            <th>设备名称</th>
+            <th>使用人数</th>
+            <th>占比</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>PC</td>
+            <td>30</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>手机</td>
+            <td>10</td>
+            <td>10%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>
+<div class="row">
+    <div class="subcon-title2">设备分辨率</div>
+</div>
+<div class="row margin-top no-margin">
+    <button type="button" class="btn btn-default pull-right">下载</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>排名</th>
+            <th>分辨率</th>
+            <th>使用人数</th>
+            <th>占比</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>1000</td>
+            <td>30</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1240</td>
+            <td>10</td>
+            <td>10%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>

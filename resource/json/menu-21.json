@@ -1,0 +1,59 @@
+[
+  {
+    "lable": "流量分析",
+    "icon": "fa-bar-chart",
+    "state": "bbsmenu.menu2.flow",
+    "items": [
+      {
+        "lable": "宏观运营分析",
+        "state": "bbsmenu.menu2.flow.macro"
+      },
+      {
+        "lable": "流量总览详情",
+        "state": "bbsmenu.menu2.flow.overview"
+      },
+      {
+        "lable": "用户概况详情",
+        "state": "menu.flow.visitor"
+      },
+      {
+        "lable": "流量来源分析",
+        "state": "menu.flow.content"
+      }
+    ]
+  },
+  {
+    "lable": "内容运营分析",
+    "icon": "fa-tasks",
+    "state": "menu.content",
+    "items": [
+      {
+        "lable": "页面分析",
+        "state": "menu.content.entry"
+      },
+      {
+        "lable": "附件下载分析",
+        "state": "menu.content.download"
+      },
+      {
+        "lable": "分类内容分析",
+        "state": "menu.content.download"
+      }
+    ]
+  },
+  {
+    "lable": "设备分析",
+    "icon": "fa-expand",
+    "state": "menu.expand",
+    "items": [
+      {
+        "lable": "地域分析",
+        "state": "menu.expand.source"
+      },
+      {
+        "lable": "设备分析",
+        "state": "menu.expand.source"
+      }
+    ]
+  }
+]

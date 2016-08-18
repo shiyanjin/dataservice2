@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="subcon-title">地域分析</div>
+    <div class="subcon-title2">城市TOP10</div>
+</div>
+<div class="row margin-top no-margin">
+    <button type="button" class="btn btn-default pull-right">下载</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>排名</th>
+            <th>城市</th>
+            <th>访客数</th>
+            <th>浏览量</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>成都</td>
+            <td>30</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>绵阳</td>
+            <td>100</td>
+            <td>12222</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row">
+    <div class="subcon-title2">省份分布</div>
+</div>
+<div class="row margin-top no-margin">
+    <button type="button" class="btn btn-default pull-right">下载</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>排名</th>
+            <th>省份</th>
+            <th>访客数</th>
+            <th>浏览量</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>四川省</td>
+            <td>30</td>
+            <td>30000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>湖南省</td>
+            <td>10</td>
+            <td>1000</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>

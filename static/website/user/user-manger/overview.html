@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="subcon-title">用户概况</div>
+    <div class="subcon-title2">用户信息概况
+        <span class="update-time">数据统计时间：2016-06-08 12:20</span>
+    </div>
+</div>
+<div class="row no-margin margin-top">
+    <a class="btn btn-default pull-right">查看用户明细</a>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>日期</th>
+            <th>累计注册用户数</th>
+            <th>活跃用户数</th>
+            <th>新增用户数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2015</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>

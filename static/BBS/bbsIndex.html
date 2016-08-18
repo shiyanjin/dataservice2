@@ -1,0 +1,187 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="login-header">
+            <span class="col-xs-5">长虹官网数据服务系统</span>
+            <div class="col-xs-5">
+                <a class="btn bg-primary btn-menu" ui-sref="menu.menu-user"><i class="fa fa-home"></i>首页</a>
+                <a class="btn bg-primary btn-menu"><i class="fa fa-shopping-cart"></i></i>交易中心</a>
+                <a class="btn bg-primary btn-menu"><i class="fa fa-male"></i>服务中心</a>
+                <a class="btn bg-primary btn-menu"><i class="fa fa-user"></i>会员管理</a>
+            </div>
+            <div class="login-out2">
+                <span><i class="fa fa-user"></i></span>
+                <span>欢迎你 admin</span>
+                <a class="btn btn-danger" ui-sref="signin">退出</a>
+            </div>
+        </header>
+    </div>
+    <div class="row no-margin">
+        <div class="subcon-title">用户指标
+            <a class="pull-right custom-a" ui-sref="menu.current.visitor">宏观用户信息></a>
+        </div>
+    </div>
+    <div class="row margin-top">
+        <div class="col-xs-6">
+            <div class="member-box">
+                <div class="all-member">
+                    <span class="menber-title">累计注册用户数</span>
+                    <span class="menber-number">130000</span>
+                </div>
+                <div class="active-menber">
+                    <span class="menber-title">今日活跃用户数</span>
+                    <span class="menber-number">1300</span>
+                </div>
+                <div class="newadd-menber">
+                    <span class="newadd-menber-span">+50今日</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="echart-box" id="mainpie"></div>
+        </div>
+    </div>
+    <div class="row no-margin">
+        <div class="subcon-title">商品分析
+            <a class="pull-right custom-a" ui-sref="menu.goods.overview">商品概况></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 pull-right">
+            <p class="input-group">
+                <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1"
+                       is-open="popup1.opened" datepicker-options="dateOptions1" ng-required="true"
+                       close-text="Close" alt-input-formats="altInputFormats" readonly/>
+                <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="show-data">
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">访客数</span>
+                    <span class="data-box-num">11</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">浏览数</span>
+                    <span class="data-box-num">11</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">人均浏览</span>
+                    <span class="data-box-num">11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="show-data">
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">加购件数</span>
+                    <span class="data-box-num">1</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">支付件数</span>
+                    <span class="data-box-num">1</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">商品收藏次数</span>
+                    <span class="data-box-num">11</span>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="data-box">
+                    <span class="databox-title">购买次数</span>
+                    <span class="data-box-num">11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-margin">
+        <div class="subcon-title">类目交易贡献TOP5<a class="pull-right custom-a" ui-sref="menu.trade.analyze">交易构成></a></div>
+    </div>
+    <div class="row no-margin">
+        <div class="col-md-3 pull-right">
+            <p class="input-group">
+                <input type="text" class="form-control" uib-datepicker-popup ng-model="dt2"
+                       is-open="popup2.opened" datepicker-options="dateOptions2" ng-required="true"
+                       close-text="Close" alt-input-formats="altInputFormats" readonly/>
+                <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open2()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+            </p>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <td>类目名称</td>
+                <td>支付金额</td>
+                <td>支付金额占比</td>
+                <td>支付商品数</td>
+                <td>支付买家占比</td>
+                <td>支付转化率</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>电视</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>冰箱</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row no-margin">
+        <div class="subcon-title">服务运营分析<a class="pull-right custom-a" ui-sref="menu.service.operation">服务中心流量概况 >></a></div>
+    </div>
+    <div class="row no-margin">
+        <p>渠道服务分析</p>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>渠道</th>
+                <th>服务好评</th>
+                <th>服务中评</th>
+                <th>服务差评</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>交易渠道</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>非交易渠道</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

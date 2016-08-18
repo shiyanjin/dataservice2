@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="subcon-title">页面流量分析</div>
+    <div class="subcon-title2">流量来源</div>
+</div>
+<div class="row margin-top no-margin">
+    <div class="col-md-3">
+        <p class="input-group">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1"
+                   is-open="popup1.opened" datepicker-options="dateOptions1" ng-required="true"
+                   close-text="Close" alt-input-formats="altInputFormats" readonly/>
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+    </div>
+    <div class="col-md-3">
+        <p class="input-group">
+            <input type="text" class="form-control" uib-datepicker-popup ng-model="dt2"
+                   is-open="popup2.opened"
+                   datepicker-options="dateOptions2" ng-required="true" close-text="Close" readonly/>
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open2()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+        </p>
+    </div>
+    <button class="btn btn-default pull-right">下载</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered table-responsive">
+        <thead>
+        <tr>
+            <th>流量来源</th>
+            <th>访客数</th>
+            <th>浏览量</th>
+            <th>跳出率</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>chiq电视</td>
+            <td>20</td>
+            <td>600</td>
+            <td>600</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>

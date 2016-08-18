@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="subcon-title">流量分析</div>
+    <div class="subcon-title2">流量来源分析
+        <span class="update-time">数据统计时间：2016年7月21日</span>
+    </div>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>日期</th>
+            <th>流量来源</th>
+            <th>访客数</th>
+            <th>访问量</th>
+            <th>人均浏览数</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2016</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row text-center">
+    <uib-pagination direction-links="true"
+                    total-items="totalItems" ng-model="currentPage"
+                    max-size="maxSize" class="pagination-sm"
+                    ng-change="pageChanged()" num-pages="totalPages"
+                    boundary-link-numbers="true" rotate="false"
+                    previous-text="&lsaquo;" next-text="&rsaquo;">
+    </uib-pagination>
+</div>

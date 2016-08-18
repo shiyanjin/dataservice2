@@ -1,0 +1,43 @@
+[
+  {
+    "lable": "经营分析",
+    "icon": "fa-group",
+    "state": "menu.menu-trade.operate",
+    "items": [
+      {
+        "lable": "经营概况",
+        "state": "menu.menu-trade.operate.overview"
+      },
+      {
+        "lable": "经营总览明细",
+        "state": "menu.menu-trade.operate.detail"
+      },
+      {
+        "lable": "商品&交易明细",
+        "state": "menu.menu-trade.operate.orderDetail"
+      }
+    ]
+  },
+  {
+    "lable": "流量分析",
+    "icon": "fa-bar-chart",
+    "state": "menu.menu-trade.flow",
+    "items": [
+      {
+        "lable": "流量分析明细",
+        "state": "menu.menu-trade.flow.detail"
+      }
+    ]
+  },
+  {
+    "lable": "交易分析",
+    "icon": "fa-suitcase",
+    "state": "menu.menu-trade.trade",
+    "items": [
+      {
+        "lable": "价格带构成",
+        "state": "menu.menu-trade.trade.price"
+      }
+    ]
+  }
+]

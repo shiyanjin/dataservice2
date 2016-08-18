@@ -1,0 +1,20 @@
+<div id="app" class="{{vm.menuclass}}"  id="app">
+    <div  class="app-header ">
+        <span class="header-span"><i class="fa fa-television"></i></span>
+        <!-- navbar header -->
+        <div class="navbar-header">长虹官网数据服务</div>
+        <!-- / navbar header -->
+    </div>
+    <div class="app-headcontent">
+        <div class="collopes" ng-click="vm.changecollopes()">
+            <i class="fa fa-arrow-left fa-lg"></i>
+        </div>
+        <div class="login-out">
+            <span><i class="fa fa-user"></i></span>
+            <span>欢迎你 admin</span>
+            <a class="btn btn-danger" ui-sref="signIn">退出</a>
+        </div>
+    </div>
+    <!--/ navbar-->
+    <div ui-view></div>
+</div>

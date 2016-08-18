@@ -1,0 +1,26 @@
+<div id="app" class="{{vm.menuclass}}"  id="app">
+    <div  class="app-header ">
+        <span class="header-span"><i class="fa fa-television"></i></span>
+        <!-- navbar header -->
+        <div class="navbar-header">长虹官网数据服务</div>
+        <!-- / navbar header -->
+    </div>
+    <div class="app-headcontent">
+        <div class="collopes" ng-click="vm.changecollopes()">
+            <i class="fa fa-arrow-left fa-lg"></i>
+        </div>
+        <div class="menu-box">
+            <a class="btn btn-danger"ui-sref="webIndex"><i class="fa fa-home"></i>首页</a>
+            <a class="btn btn-danger" ui-sref="menu.menu-trade"><i class="fa fa-shopping-cart"></i></i>交易中心</a>
+            <a class="btn btn-danger" ui-sref="menu.menu-service"><i class="fa fa-male"></i>服务中心</a>
+            <a class="btn btn-danger" ui-sref="menu.menu-user"><i class="fa fa-user"></i>会员管理</a>
+        </div>
+        <div class="login-out">
+            <span><i class="fa fa-user"></i></span>
+            <span>欢迎你 admin</span>
+            <a class="btn btn-danger" ui-sref="signIn">退出</a>
+        </div>
+    </div>
+    <!--/ navbar-->
+    <div ui-view></div>
+</div>

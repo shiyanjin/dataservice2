@@ -1,0 +1,145 @@
+[
+  {
+    "lable": "商品分析",
+    "icon": "fa-group",
+    "state": "menu.goods",
+    "items": [
+      {
+        "lable": "商品概况",
+        "state": "menu.goods.overview"
+      },
+      {
+        "lable": "商品明细",
+        "state": "menu.goods.detail"
+      }
+    ]
+  },
+  {
+    "lable": "流量分析",
+    "icon": "fa-bar-chart",
+    "state": "menu.flow",
+    "items": [
+      {
+        "lable": "流量概况",
+        "state": "menu.flow.overview"
+      },
+      {
+        "lable": "流量分析",
+        "state": "menu.flow.analyze"
+      },
+      {
+        "lable": "访客分析",
+        "state": "menu.flow.visitor"
+      },
+      {
+        "lable": "内容流量",
+        "state": "menu.flow.content"
+      },
+      {
+        "lable": "页面流量",
+        "state": "menu.flow.pages"
+      },
+      {
+        "lable": "下载流量",
+        "state": "menu.flow.download"
+      }
+    ]
+  },
+  {
+    "lable": "交易分析",
+    "icon": "fa-suitcase",
+    "state": "menu.trade",
+    "items": [
+      {
+        "lable": "交易构成",
+        "state": "menu.trade.analyze"
+      }
+    ]
+  },
+  {
+    "lable": "特性分析",
+    "icon": "fa-tag",
+    "state": "menu.speciality",
+    "items": [
+      {
+        "lable": "会员构成",
+        "state": "menu.speciality.member"
+      },
+      {
+        "lable": "浏览端分析",
+        "state": "menu.speciality.browse"
+      },
+      {
+        "lable": "设备分析",
+        "state": "menu.speciality.device"
+      },
+      {
+        "lable": "地域分析",
+        "state": "menu.speciality.locate"
+      }
+    ]
+  },
+  {
+    "lable": "服务分析",
+    "icon": "fa-truck",
+    "state": "menu.service",
+    "items": [
+      {
+        "lable": "服务运营分析",
+        "state": "menu.service.operation"
+      },
+      {
+        "lable": "在线客服分析",
+        "state": "menu.service.onlineService"
+      }
+    ]
+  },
+  {
+    "lable": "帖子分析",
+    "icon": "fa-bookmark",
+    "state": "menu.post",
+    "items": [
+      {
+        "lable": "帖子分析",
+        "state": "menu.post.post"
+      }
+    ]
+  },
+  {
+    "lable": "内容运营分析",
+    "icon": "fa-tasks",
+    "state": "menu.content",
+    "items": [
+      {
+        "lable": "入口页面分析",
+        "state": "menu.content.entry"
+      },
+      {
+        "lable": "附件下载分析",
+        "state": "menu.content.download"
+      }
+    ]
+  },
+  {
+    "lable": "活动运营分析",
+    "icon": "fa-cart-arrow-down",
+    "state": "menu.event",
+    "items": [
+      {
+        "lable": "活动页面分析",
+        "state": "menu.event.page"
+      }
+    ]
+  },
+  {
+    "lable": "推广运营分析",
+    "icon": "fa-expand",
+    "state": "menu.expand",
+    "items": [
+      {
+        "lable": "流量来源分析",
+        "state": "menu.expand.source"
+      }
+    ]
+  }
+]

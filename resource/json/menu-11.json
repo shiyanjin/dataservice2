@@ -1,0 +1,62 @@
+[
+  {
+    "lable": "用户信息",
+    "icon": "fa-user",
+    "state": "menu.menu-user.user",
+    "items": [
+      {
+        "lable": "宏观用户信息",
+        "state": "menu.menu-user.user.macro"
+      },
+      {
+        "lable": "用户概况",
+        "state": "menu.menu-user.user.overview"
+      },
+      {
+        "lable": "用户留存率",
+        "state": "menu.menu-user.user.remain"
+      },
+      {
+        "lable": "用户信息明细",
+        "state": "menu.menu-user.user.detail"
+      }
+    ]
+  },
+  {
+    "lable": "用户分析",
+    "icon": "fa-group",
+    "state": "menu.menu-user.user-analyze",
+    "items": [
+      {
+        "lable": "访问量",
+        "state": "menu.menu-user.user-analyze.visit"
+      },
+      {
+        "lable": "访客数",
+        "state": "menu.menu-user.user-analyze.visitor"
+      }
+    ]
+  },
+  {
+    "lable": "设备分析",
+    "icon": "fa-bar-chart",
+    "state": "menu.menu-user.device",
+    "items": [
+      {
+        "lable": "使用设备分析",
+        "state": "menu.menu-user.device.device"
+      }
+    ]
+  },
+  {
+    "lable": "地域分析",
+    "icon": "fa-suitcase",
+    "state": "menu.menu-user.location",
+    "items": [
+      {
+        "lable": "地域分析",
+        "state": "menu.menu-user.location.location"
+      }
+    ]
+  }
+]

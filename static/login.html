@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <header class="login-header">
+            长虹统一官网数据服务系统
+        </header>
+    </div>
+    <div class="login-content">
+        <form class="col-xs-8 col-xs-offset-2">
+            <div class="row margin-top">
+                <div class="col-xs-4 text-right">
+                    <label class="custom-label">用户名</label>
+                </div>
+                <div class="col-xs-8">
+                    <input class="form-control" ng-model="vm.username">
+                </div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-xs-4 text-right">
+                    <label class="custom-label">密码</label>
+                </div>
+                <div class="col-xs-8">
+                    <input class="form-control" ng-model="vm.password" type="password">
+                </div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-xs-8 col-xs-offset-4">
+                    <button type="button" class="btn btn-success btn-block" ng-click="vm.login()">登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

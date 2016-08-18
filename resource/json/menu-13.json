@@ -1,0 +1,44 @@
+[
+  {
+    "lable": "流量分析",
+    "icon": "fa-bar-chart",
+    "state": "menu.menu-service.flow",
+    "items": [
+      {
+        "lable": "流量概况",
+        "state": "menu.menu-service.flow.overview"
+      },
+      {
+        "lable": "流量总览明细",
+        "state": "menu.menu-service.flow.detail"
+      },
+      {
+        "lable": "流量来源",
+        "state": "menu.menu-service.flow.from"
+      },
+      {
+        "lable": "下载流量",
+        "state": "menu.menu-service.flow.download"
+      }
+    ]
+  },
+  {
+    "lable": "用户分析",
+    "icon": "fa-tag",
+    "state": "menu.menu-service.user",
+    "items": [
+      {
+        "lable": "会员分析",
+        "state": "menu.menu-service.user.member"
+      },
+      {
+        "lable": "地域分析",
+        "state": "menu.menu-service.user.locate"
+      },
+      {
+        "lable": "使用设备分析",
+        "state": "menu.menu-service.user.device"
+      }
+    ]
+  }
+]

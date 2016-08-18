@@ -1,0 +1,36 @@
+<!--menu-->
+<div class="app-aside">
+    <div ng-class="{active:$state.includes('{{group.state}}')}" class="subNav"  ng-repeat="group in NavData">
+        <div class="custom-span" onclick="changeMenu(this)">
+                <span class="left-img pull-left">
+                     <i class="fa {{group.icon}} fa-lg"></i>
+                </span>
+            <span class="mid-menu">{{group.lable}}</span>
+            <span class="pull-right arrow-right">
+                     <i class="fa fa-angle-right"></i>
+                </span>
+        </div>
+        <ul class="navContent">
+            <li ui-sref-active="active" ng-repeat="item in group.items" class="custom-li">
+                <a href="" ui-sref="{{item.state}}">
+                    <span class="custom-subspan">{{item.lable}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- / menu -->
+<!-- content -->
+<div class="app-content">
+    <div class="container-fluid app-content-body fade-in-up" ui-view></div>
+</div>
+<script>
+    function changeMenu(e){
+        if($(e).parent('.subNav').hasClass('active')){
+            $(e).parent('.subNav').removeClass('active');
+        }else{
+            $(e).parent('.subNav').addClass('active');
+            $(e).parent('.subNav').siblings('.subNav').removeClass('active');
+        }
+    }
+</script>

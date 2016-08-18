@@ -1,0 +1,95 @@
+<div class="row">
+    <div class="subcon-title">流量概况</div>
+    <div class="subcon-title2">流量总览</div>
+</div>
+<div class="row margin-top no-margin">
+    <div class="row margin-top no-margin">
+        <div class="col-xs-6 col-xs-offset-5 no-padding">
+            <div class="col-md-6">
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup ng-model="dt1"
+                           is-open="popup1.opened" datepicker-options="dateOptions1" ng-required="true"
+                           close-text="Close" alt-input-formats="altInputFormats" readonly/>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="input-group">
+                    <input type="text" class="form-control" uib-datepicker-popup ng-model="dt2"
+                           is-open="popup2.opened"
+                           datepicker-options="dateOptions2" ng-required="true" close-text="Close" readonly/>
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open2()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+                </p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-default pull-right">下载</button>
+    </div>
+</div>
+<div class="row">
+    <div class="show-data">
+        <div class="col-xs-2">
+            <div class="data-box">
+                <span class="databox-title">访客数</span>
+                <span class="data-box-num">11</span>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <div class="data-box">
+                <span class="databox-title">浏览量</span>
+                <span class="data-box-num">1.17</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="subcon-title2">流量趋势</div>
+</div>
+<div class="row margin-top no-margin">
+    <button type="button" class="btn btn-default pull-right">指标</button>
+</div>
+<div class="row margin-top no-margin">
+    <div class="left-good-index">指标</div>
+    <div class="check-box">
+        <i class="fa fa-check-square"></i>
+        <span class="check-text">访客数</span>
+    </div>
+    <div class="check-box">
+        <i class="fa fa-check-square"></i>
+        <span class="check-text">浏览数</span>
+    </div>
+    <div class="check-box">
+        <i class="fa fa-check-square"></i>
+        <span class="check-text">人均浏览量</span>
+    </div>
+</div>
+<div id="main" class="echart-box margin-top"></div>
+<div class="row margin-top">
+    <div class="subcon-title2">流量来源TOP3</div>
+</div>
+<div class="row no-margin margin-top">
+    <button class="btn btn-default pull-right">更多</button>
+</div>
+<div class="row margin-top no-margin">
+    <table class="table table-bordered table-responsive">
+        <thead>
+        <tr>
+            <th>流量来源</th>
+            <th>浏览量</th>
+            <th>访客量</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>chiq电视</td>
+            <td>20</td>
+            <td>600</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
